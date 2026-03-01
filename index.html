@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentalidade de Aço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mentalidade de Aço</h1>
+        <p>Disciplina. Foco. Evolução diária.</p>
+    </header>
+
+    <section class="hero">
+        <h2>Forjando homens fortes na mente e no espírito.</h2>
+        <button>Começar Evolução</button>
+    </section>
+
+    <section class="sobre">
+        <h2>Sobre o Projeto</h2>
+        <p>
+            A Mentalidade de Aço nasceu para despertar disciplina, constância e força interior.
+            Aqui não falamos de motivação frágil. Falamos de evolução real.
+        </p>
+    </section>
+
+    <section class="frases">
+        <h2>Filosofia</h2>
+        <p>"Ser forte não é não sentir dor. É continuar mesmo sentindo."</p>
+        <p>"Não preciso ser melhor que ninguém. Só melhor que ontem."</p>
+    </section><sectionclass="codigo fade-in">
+    <h2>Código da Mentalidade</h2>
+    <p>• Disciplina acima da motivação</p>
+    <p>• Constância acima da intensidade</p>
+    <p>• Evolução acima da comparação</p>
+</section>
+    <footer>
+        <p>© 2026 Mentalidade de Aço - Todos os direitos reservados</p>
+  <section class="contato fade-in">
+    <h2>Entre para a Elite</h2>
+    <p>Receba conteúdos exclusivos sobre disciplina e evolução.</p>
+    <input type="email" placeholder="Seu melhor e-mail">
+    <button>Quero Evoluir</button>
+</section>      
+  </footer>
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+
+    window.addEventListener('scroll', () => {
+        elements.forEach(el => {
+            const position = el.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.2;
+
+            if(position < screenPosition) {
+                el.classList.add('active');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
